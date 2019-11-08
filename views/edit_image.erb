@@ -6,10 +6,10 @@
             <input type="hidden" name="image_id" value="<%=@image['image_id']%>">
             <label for="image_title">Image Title:</label>
             <input type="text" name="image_title" value="<%=@image['image_title']%>">
-            <label for="image_url">Image URL:</label>
-            <input type="text" name="image_url" value="<%=@image['image_url']%>">
             <label for="image_description">Image Description:</label>
             <input type="text" name="image_description" value="<%=@image['image_description']%>">
+            <label for="image_url">Image URL:</label>
+            <input type="text" name="image_url" value="<%=@image['image_url']%>">
         </form>
         <form action="/Delete_image" method="POST" id='delete_image'>
             <input type="hidden" name="_method" value="delete">
