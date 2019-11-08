@@ -75,3 +75,10 @@
     text-align: center;
     align-items: center;
 }
+
+.password ul {
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    padding: 0 30px;
+}
