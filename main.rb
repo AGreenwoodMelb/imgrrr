@@ -3,15 +3,8 @@ require 'sinatra/reloader' if development?
 
 Dir[File.join(__dir__, 'models', '*.rb')].each { |file| require file }
 
-#Not sure how/if this works yet
-use Rack::Session::Cookie, :key => 'rack.session',
-                           :path => '/',
-                           :expire_after => 300, # In 5 minutes
-                           :secret => 'BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTEzMmM2YjI3YmUwZTUyYjBiOTM3%0AYjhlMjUyMjZkOTMxMzgxNDFhNTRmMzkwNWVjNzE1MTk3MzZiMjRmODE4NGYG%0AOwBGSSIJY3NyZgY7AEZJIjFYN3MyWm0yZG9yZzd4M0pSVmVZL1ZHOVlrYngx%0AUkRwbjJ5aTI0K0kybWtRPQY7AEZJIg10cmFja2luZwY7AEZ7BkkiFEhUVFBf%0AVVNFUl9BR0VOVAY7AFRJIi1kZjAzN2E4NjI4ZDQ4NThiYmViNTMyMGQ5Zjll%0AYjgyYjIwZWNjZWQ0BjsARg%3D%3D%0A--34122cb595fb8bdae25dfe84c5cea367f2644b7f'
 
-
-
-
+enable :sessions
 #METHODS
 
 def refreshUserSession
