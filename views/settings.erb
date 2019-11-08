@@ -3,11 +3,16 @@
     <div class="cardPreviewContainer edit password">
         <h2>Change Password</h2>
         <form action="/Update_password" method="POST">
+            <ul>
+                <li>Can contain numbers, charcters a-z, A-Z and underscores '_'</li>
+                <li>Cannot contain whitespaces</li>
+                <li>Must be at least 8 characters long</li>
+            </ul>
             <p><%=@message%></p>
             <input type="hidden" name="_method" value="PATCH">
             <input type="password" name = "current_password" placeholder="Current Password" required>
-            <input type="password" name = "new_password" placeholder="New Password" required>
-            <input type="password" name = "confirm_password" placeholder="Confirm New Password" required>
+            <input type="password" name = "new_password" pattern ="(?=[^\s][a-zA-Z0-9_]).{8,}" placeholder="New Password" required>
+            <input type="password" name = "confirm_password" pattern ="(?=[^\s][a-zA-Z0-9_]).{8,}" placeholder="Confirm New Password" required>
             <button>Change Password</button>
         </form>
     </div>
