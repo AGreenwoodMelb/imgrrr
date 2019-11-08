@@ -51,7 +51,7 @@ The main focus was on security and preventing users from accessing or editing th
 * Probably some kind of Copyright infringement that Imgur will kneecap me over
 * (That one I forgot about -.-)
 * The image previews on the Album page need to have a max height
-
+* Card layout changes dependent on cover image dimension
 ## Future Features:
 
 * Password recovery
