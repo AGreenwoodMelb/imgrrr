@@ -12,6 +12,19 @@ body {
     justify-content: center;
 }
 
+.logo {
+    height: 270px;
+    width: 738px;
+    /* background-color: blue; */
+    background-image: url("/images/imgrrrLogo.png");
+    background-repeat: no-repeat;
+}
+
+.logo:hover {
+    background-image: url("/images/imgur.png");
+
+}
+
 .backButton {
     -webkit-appearance: button-bevel;
     -moz-appearance: button-bevel;
