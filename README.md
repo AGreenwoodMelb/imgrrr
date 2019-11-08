@@ -1,6 +1,6 @@
-# imgrrr
+# [Imgrrr](https://ag-imgrrr.herokuapp.com)
 
-An attempt to make a link manager site styled after [Imgur](https://imgur.com/)
+An attempt to make a link manager site using the style of [Imgur](https://imgur.com/)
 
  (Please don't sue me imgur)
 
