@@ -11,14 +11,14 @@ future features
 
 ## Planning:
 
-![Potential Pages]()
-![Data Structure]()
-![Login/Sign Up Page]()
-![Login Pseudo]()
-![Sign Up Pseudo]()
-![Home/User Page]()
-![Album Page]()
-![Image Page]()
+![Potential Pages](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/potential-pages.jpg)
+![Data Structure](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/data-structure.jpg)
+![Login/Sign Up Page](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/login-signup-page.jpg)
+![Login Pseudo](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/login-pseudo.jpg)
+![Sign Up Pseudo](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/signup-pseudo.jpg)
+![Home/User Page](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/user-home-page.jpg)
+![Album Page](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/album-page.jpg)
+![Image Page](https://github.com/AGreenwoodMelb/imgrrr/blob/master/README/image-page.jpg)
 
 
 ## Approach:
