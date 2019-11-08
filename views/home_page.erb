@@ -1,0 +1,21 @@
+<div class="titleBar">
+    <h1>Your Albums</h1>
+</div>
+<div class="mainContainer">
+    <section class="cardPreviewContainer">
+        <% @albums.each do |album|%>
+            <article class='card'>
+                <a href="/Album?album_id=<%=album["album_id"]%>">
+                    <img src="<%=album['album_cover_image']%>%" alt="">
+                    <h4><%=album['album_title']%></h4>
+                </a>
+            </article>
+        <%end%>
+        <article class='card'>
+            <a href="/Add_new_album">
+                <span class='addSymbol'>+</span>
+                <h4>Add Album</h4>
+            </a>
+        </article>
+    </section>
+</div>

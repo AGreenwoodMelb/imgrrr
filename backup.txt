@@ -1,0 +1,55 @@
+<a href="/user?username=<%=user['username']%>%"><%=user['username']%></a>
+
+
+FROM home_page
+  <article class="Unsorted">
+            <a href="/" disabled>
+              <img src="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg" alt="default Folder" style="width:100px">
+                <h4>Unsorted</h4>
+            </a>
+        </article>
+
+
+
+
+
+CREATE FUNCTION dbo.FuzzyMatchString (@s1 varchar(100), @s2 varchar(100))
+RETURNS int
+AS
+BEGIN
+    -- written by William Talada for SqlServerCentral
+    DECLARE @i int, @j int;
+    SET @i = 1;
+    SET @j = 0;
+    WHILE @i < LEN(@s1)
+    BEGIN
+    compares 2 character snippets of the search term to the current username
+    SQL is 1 indexed
+        IF CHARINDEX(SUBSTRING(@s1,@i,2), @s2) > 0 SET @j=@j+1;
+        SET @i=@i+1;
+    END
+    RETURN @j;
+END
+GO
+
+DECLARE @s1 varchar(100) = 'Billy William Lee Talada Jr.';
+SELECT DISTINCT top (50) name, fms.score, SOUNDEX(Name) AS SoundexCode
+from Names
+CROSS APPLY (select dbo.FuzzyMatchString(@s1, Name) AS score) AS fms
+ORDER by fms.score desc
+;
+
+
+
+
+
+READ ME 
+
+planning
+
+approach to solving
+
+cool tech
+lessons i've learnt
+
+future features

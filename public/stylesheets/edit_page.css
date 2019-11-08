@@ -1,0 +1,77 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+    background-color: #2C2F34;
+}
+
+.edit h2 {
+    color: #1DA667;
+    text-align: center;
+
+}
+
+.edit label {
+    display: block;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.edit input {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.checkBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.checkBox label {
+    width: initial;
+    padding-right: 10px;
+}
+
+.edit input[type='checkbox'] {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+
+
+
+
+.edit button {
+    background-color: #5C69FF;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    display: inline;
+}
+
+.edit button:hover {
+    background-color: #636FFF;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.settings>div {
+    margin: 10px;
+}
+
+.password {
+    text-align: center;
+    align-items: center;
+}

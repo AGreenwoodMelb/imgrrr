@@ -1,0 +1,21 @@
+<img src="https://via.placeholder.com/728x270.png" alt="Page Logo" class='BannerImage'>
+<div class="landingFormContainer">
+    <form class="landingForm" action="/check_login" method ='POST' id ='loginForm' autocomplete='off'>
+        <input type="hidden" name="hidden" autocomplete='false'>
+        <p><%=@message %></p>
+        <input type="text" name="username" required placeholder="Username">
+        <input type="password" name ="password" required placeholder="Password">
+    </form>
+    <div class="buttonContainer">
+        <button form='loginForm'>Login</button>
+        </form >
+            <form action="/SignUp" class='forceInline'>
+            <button >Sign Up</button>
+        </form>
+    </div>
+</div>
+<div class="disclaimer">
+    <p>Poor facsimile of the site <a href="www.imgur.com">imgur</a></p>
+    <p>Student project only.</p>
+    <p>Please don't sue me imgur!</p>
+</div>

@@ -1,0 +1,22 @@
+<div class="titleBar">
+    <h1><%=@user['username'].capitalize%>'s Public Albums</h1>
+</div>
+<div class="mainContainer">
+    <section class="cardPreviewContainer">
+        <%is_no_public_albums = true %>
+        <% @albums.each do |album|%>
+            <% if album['album_is_public'] == '1' %>
+                <%is_no_public_albums =false%>
+                <article class='card'>
+                    <a href="/Album?album_id=<%=album["album_id"]%>">
+                        <img src="<%=album['album_cover_image']%>%" alt="">
+                        <h4><%=album['album_title']%></h4>
+                    </a>
+                </article>
+            <% end %>
+        <% end %>
+        <% if is_no_public_albums %>
+            <h1 class="noPublic"><%=@user['username'].capitalize%> has no Public Albums</h1>
+        <% end %>
+    </section>
+</div>

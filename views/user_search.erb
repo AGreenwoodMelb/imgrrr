@@ -1,0 +1,16 @@
+
+<div class="mainContainer">
+<div class="cardPreviewContainer search">
+<h2>Results for "<%=@searched%>"</h2>
+<%is_nothing_close = true%>
+<% @potential_users.each do |user|%>
+    <%if user[:score] > 0 %>
+        <% is_nothing_close= false %>
+     <a href="/user?username=<%=user[:user]['username']%>"><%=user[:user]['username']%></a>
+    <% end %>
+<% end %>
+<% if is_nothing_close%>
+    <p>No users founds with any similarity</p>
+<% end %>
+</div>
+</div>

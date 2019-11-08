@@ -1,0 +1,22 @@
+<div class="mainContainer">
+<div class="cardPreviewContainer edit">
+<form action="/Insert_new_album" method="POST" id="add_new_album">
+    <h2>Add New Album</h2>
+    <label for="album_title">Album Title:</label>
+    <input type="text" name="album_title" value="">
+    <label for="album_description">Album Description:</label>
+    <input type="text" name="album_description" value="">
+    <label for="album_cover_image">Album Cover Image:</label>
+    <input type="text" name="album_cover_image" value="">
+    <div class='checkBox'>
+        <label for="album_is_public" >Public Album:</label>
+        <input type="checkbox" name="album_is_public" form='add_new_album'  checked >
+    </div>
+    </form>
+
+    <div class='buttonBox'>
+        <a href="/" class='backButton'><p>Back</p></a>
+        <button form='add_new_album'>Add</button>
+    </div>
+</div>
+</div>

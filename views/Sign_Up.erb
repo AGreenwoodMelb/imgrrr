@@ -1,0 +1,24 @@
+<img src="https://via.placeholder.com/728x270.png" alt="Page Logo">
+<h3>Create a new Username and Password</h3>
+<ul>
+    <li>Can contain numbers, charcters a-z, A-Z and underscores '_'</li>
+    <li>Cannot contain whitespaces</li>
+    <li>Username must be at least 3 characters long</li>
+    <li>Password must be at least 8 characters long</li>
+</ul>
+<div class="landingFormContainer">
+    <p><%=@message%></p>
+    <form action="/newUser" method ='POST' class='landingForm' id ='signUpForm' autocomplete='off'>
+        <input type="hidden" name="hidden" autocomplete='false'>
+        <input type="text" name ="username" pattern ="(?=[^\s][a-zA-Z0-9_]).{3,}"title="Invalid Username"required placeholder='Username'>
+        <input type="password" name="password" pattern ="(?=[^\s][a-zA-Z0-9_]).{8,}" title="Invalid Password" required placeholder='Password'>
+        <input type="email" name="email" required placeholder='Email Address'>
+        <div>
+            <a href="/Landing" class="backButton"><p>Back</p></a> 
+            <button class='forceInline' form="signUpForm">Sign Up</button>
+        </div>
+    </form>
+</div>
+
+
+

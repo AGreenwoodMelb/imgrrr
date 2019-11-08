@@ -1,0 +1,39 @@
+<div class="titleBar">
+    <div class="leftAlign">
+        <h1><%=@album['album_title']%></h1>
+        <h2>by</h2>
+        <a href="/user?username=<%=@user['username']%>"><%=@user['username'].capitalize%></a>
+    </div>
+    <div class="rightAlign">
+        <% if @is_creator == true %>
+            <form action="/Edit_album" method="POST">
+                <input type="hidden" name="album_id" value= "<%=@album['album_id']%>">
+                <button>Edit</button>
+            </form>
+        <% end %>
+    </div>
+</div>
+<div class="mainContainer">
+    <section class= "cardPreviewContainer albumContainer">
+        <article class='description'>
+            <h3>Description:</h3>
+            <p><%=@album['album_description']%></p>
+        </article>
+        <%@images.each do |image|%>
+            <article class="imageCard card">
+                <a href="/Image?image_id=<%=image['image_id']%>">
+                    <img src="<%=image['image_url']%>" alt="IMAGE NOT FOUND">
+                    <h4><%=image['image_title']%></h4>
+                </a>
+            </article>
+        <%end%>
+        <%if @is_creator%>
+            <article class='card'>
+                <a href="/Add_new_image?album_id=<%=@album['album_id']%>">
+                    <span class='addSymbol'>+</span>
+                    <h4>Add Image</h4>
+                </a>
+            </article>
+        <%end%>
+    </section>
+</div>

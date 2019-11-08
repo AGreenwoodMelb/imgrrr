@@ -1,0 +1,23 @@
+<h1>Settings</h1>
+<div class="mainContainer settings">
+    <div class="cardPreviewContainer edit password">
+        <h2>Change Password</h2>
+        <form action="/Update_password" method="POST">
+            <p><%=@message%></p>
+            <input type="hidden" name="_method" value="PATCH">
+            <input type="password" name = "current_password" placeholder="Current Password" required>
+            <input type="password" name = "new_password" placeholder="New Password" required>
+            <input type="password" name = "confirm_password" placeholder="Confirm New Password" required>
+            <button>Change Password</button>
+        </form>
+    </div>
+    <div class="cardPreviewContainer edit password">
+        <h2>DELETE ACCOUNT</h2>
+        <form action="/Delete_user" method="POST">
+            <p><%=@message2%></p>
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="password" name="current_password" placeholder="Password" required>
+            <button>DELETE ACCOUNT</button>
+        </form>
+    </div>
+</div>

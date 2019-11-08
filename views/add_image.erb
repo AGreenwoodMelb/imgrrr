@@ -1,0 +1,18 @@
+<div class="mainContainer">
+    <div class="cardPreviewContainer edit">
+        <form action="/Insert_new_image" method="POST" id="add_new_image">
+            <h2>Add New Image</h2>
+            <input type="hidden" name='album_id' value ="<%=@album['album_id']%>">
+            <label for="image_title">Image Title:</label>
+            <input type="text" name="image_title" value="" autocomplete ='off'>
+            <label for="image_url">Image Description:</label>
+            <input type="text" name="image_description" value="">
+            <label for="image_url">Image URL:</label>
+            <input type="text" name="image_url" value="">
+        </form>
+        <div class='buttonBox'>
+            <a href= "/Album?album_id=<%=@album['album_id']%>" class='backButton'><p>Back</p></a>
+            <button form='add_new_image'>Add</button>
+        </div>
+    </div>
+</div>

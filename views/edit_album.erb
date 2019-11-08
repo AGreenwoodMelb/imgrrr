@@ -1,0 +1,28 @@
+<div class="mainContainer">
+    <div class="cardPreviewContainer edit">
+        <form action="/Update_album" method="POST" id="update_album">
+            <h2>Update Album</h2>
+            <input type="hidden" name="_method" value="patch">
+            <input type="hidden" name="album_id" value="<%=@album['album_id']%>">
+            <label for="album_title">Album Title:</label>
+            <input type="text" name="album_title" value="<%=@album['album_title']%>">
+            <label for="album_description">Album Description:</label>
+            <input type="text" name="album_description" value="<%=@album['album_description']%>">
+            <label for="album_cover_image">Album Cover Image:</label>
+            <input type="text" name="album_cover_image" value="<%=@album['album_cover_image']%>">
+            <div class='checkBox'>
+                <label for="album_is_public" >Public Album:</label>
+                <input type="checkbox" name="album_is_public" form='update_album'  <%if @album['album_is_public']=='1'%> checked <%end%>>
+            </div>
+        </form>
+        <form action="/Delete_album" method="POST"id='delete_album' >
+            <input type="hidden" name="_method" value="delete">
+            <input type="hidden" name="album_id" value="<%=@album['album_id']%>">
+        </form>
+        <div class='buttonBox'>
+            <a href="/Album?album_id=<%=@album['album_id']%>" class='backButton'><p>Back</p></a>
+            <button form='delete_album'>Delete</button>
+            <button form='update_album'>Update</button>
+        </div>
+    </div>
+</div>

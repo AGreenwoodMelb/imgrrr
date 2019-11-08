@@ -1,0 +1,26 @@
+<div class="titleBar">
+  <div class="leftAlign">
+    <h1><%=@image['image_title']%></h1>
+    <h2>by</h2>
+    <a href="/user?username=<%=@user['username']%>"><%=@user['username'].capitalize%></a>
+    <h2>in</h2>
+    <a href="/Album?album_id=<%=@album['album_id']%>"><%=@album['album_title']%></a>
+  </div>
+  <div class="rightAlign">
+    <%if @is_creator ==true%>
+      <form action="/Edit_image" method="POST">
+        <input type="hidden" name ="image_id" value ="<%=@image['image_id']%>">
+        <button>Edit</button>
+      </form>
+    <%end%>
+  </div>
+</div>
+<div class="mainContainer">
+  <div class="cardPreviewContainer image">
+    <a href="<%=@image['image_url']%>"><img src="<%=@image['image_url']%>" alt="IMAGE NOT FOUND"></a>
+    <article class='description'>
+      <h3>Description:</h3>
+      <p><%=@image['image_description']%></p>
+    </article>
+  </div>
+</div>

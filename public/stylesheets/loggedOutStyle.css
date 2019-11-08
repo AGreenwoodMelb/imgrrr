@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 95vh;
+    background-color: #141518;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.backButton {
+    -webkit-appearance: button-bevel;
+    -moz-appearance: button-bevel;
+    appearance: button-bevel;
+    text-decoration: none;
+    background-color: #5C69FF;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+p {
+    color: white;
+    word-wrap: normal;
+}
+
+ul,
+li {
+    color: white;
+    text-align: left;
+}
+
+h3 {
+    color: #1DA667;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+
+.landingFormContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #2C2F34;
+    border-radius: 15px;
+    padding: 5px 30px;
+    margin: 10px;
+    width: 375px;
+}
+
+.landingForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.landingForm label {
+    float: left;
+    padding-top: 5px;
+    margin: 5px;
+    font-size: 24px;
+}
+
+.landingForm input {
+    float: right;
+    width: 300px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px 15px;
+    font-size: 16px;
+    background-color: #191919;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.landingForm input:focus {
+    border: #1DA667 1px solid;
+    /* background-color: blue; */
+}
+
+.landingFormContainer button {
+    background-color: #5C69FF;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    width: 100px;
+    height: 50px;
+    display: inline;
+}
+
+.landingForm button:hover {
+    background-color: #636FFF;
+}
+
+.forceInline {
+    display: inline;
+}
+
+.disclaimer a {
+    font-size: 24px;
+    color: #1DA667;
+    background-color: #2C2F34;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
