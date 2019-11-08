@@ -1,13 +1,10 @@
 # imgrrr
-Project: Imgrrr
 
+An attempt to make a link manager site styled after [Imgur](https://imgur.com/)
 
-approach to solving
+ (Please don't sue me imgur)
 
-cool tech
-lessons i've learnt
-
-future features
+The main focus was on security and preventing users from accessing or editing things they aren't supposed to through manipulation of the URL
 
 ## Planning:
 
@@ -23,16 +20,23 @@ future features
 
 ## Approach:
 
+1. Panic!
+2. Plan data structure and wireframess
+3. Code back-end functionality
+4. Build basic front-end to access back-end
+5. Apply css styling and cosmetics to from end
+6. Test and bug fix
+
 ## Lessons Learnt:
 
-* SQL indexes start at 1 (at list TEXT indexes do)
+* SQL indexes start at 1 (at least TEXT indexes do)
 * Using Sinatra Sessions is better than using Rack.Session
+* Customizing checkboxes with HTML and CSS is difficult
 
 ## Cool Tech:
 
-### Fuzzy matching:
-
-Used to search for usernames similar to a given string by looking for asubstring of string in each username and scoring them accodingly.
+* ### Fuzzy matching:
+    Used to search for usernames similar to a given string by looking for asubstring of string in each username and scoring them accodingly. Adapted from
 [Fuzzy match](https://www.sqlservercentral.com/articles/fuzzy-search)
     
 
@@ -43,7 +47,10 @@ Used to search for usernames similar to a given string by looking for asubstring
 * Album/image title+description can exceed container size causing display issues
 * Album/image description can be empty
 * No password recovery function
+* Spelling mistakes and typos EVERYWHERE
+* Probably some kind of Copyright infringement that Imgur will kneecap me over
 * (That one I forgot about -.-)
+* The image previews on the Album page need to have a max height
 
 ## Future Features:
 
