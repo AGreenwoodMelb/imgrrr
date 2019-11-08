@@ -52,6 +52,8 @@ The main focus was on security and preventing users from accessing or editing th
 * (That one I forgot about -.-)
 * The image previews on the Album page need to have a max height
 * Card layout changes dependent on cover image dimension
+* THOSE CSS FILES ARE CRIMINAL
+
 ## Future Features:
 
 * Password recovery
